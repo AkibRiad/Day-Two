@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .fakabox1{grid-area: a;}
+        .fakabox2{grid-area: b;}
+        .fakabox3{ grid-area: c;}
+        .fakabox4{ grid-area: d;}
+        .fakabox5{grid-area: e;}
+        .fakabox6{grid-area: f;}
+        .fakabox7{grid-area: g;}
+        .fakabox8{grid-area: h}
+        .fakabox9{grid-area: i}
+        .fakabox10{grid-area: j}
+        .fakabox11{grid-area: k}
+        .fakabox12{grid-area: l}
+        
+        
+        .grid{
+            display: grid;
+            grid-template-areas: 
+            "a b c d"
+            "a e f g"
+            "a h i j"
+            "a k k k"
+            "a l l l"
+            ;
+            gap: 20px;
+
+        }
+        .grid div{
+            background-color: aquamarine;
+            border: 2px solid yellow;
+            font-size: 2rem;
+            text-align: center;
+        }
+        #q,#w,#p,#o{
+            background-color: red;
+        }
+        @media  screen and (max-width:576px) {
+            .grid{
+            grid-template-areas: 
+            "a"
+            "b"
+            "c"
+            "d"
+            "e"
+            "f"
+            "g"
+            "h"
+            "i"
+            "j"
+            "k"
+            "l"
+            
+        }
+    }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="grid">
+            <div class="fakabox1">1</div>
+            <div class="fakabox2">2</div>
+            <div class="fakabox3">3</div>
+            <div class="fakabox4">4</div>
+            <div class="fakabox5">5</div>
+            <div class="fakabox6" id="q">6</div>
+            <div class="fakabox7" id="w">7</div>
+            <div class="fakabox8">8</div>
+            <div class="fakabox9" id="p">9</div>
+            <div class="fakabox10" id="o">10</div>
+            <div class="fakabox11">11</div>
+            <div class="fakabox12">12</div>
+        </section>
+    </main>
+</body>
+</html>
